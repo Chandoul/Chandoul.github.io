@@ -1,5 +1,6 @@
 let setting = 'https://raw.githubusercontent.com/Chandoul/aoeii_easy_manager/main/AoE II Manager.json';
 let installer = 'https://raw.githubusercontent.com/Chandoul/aoeii_easy_manager/main/Installer.ahk';
+let ahkinstaller = 'https://www.autohotkey.com/download/ahk-v2.exe';
 let rawText = '';
 
 fetch(setting).then(function(response) {
@@ -13,7 +14,11 @@ function getVersion(text) {
 }
 
 function getInstaller() {
-    console.log('ok');
+    saveFile(installer);
+}
+
+function getAHKInstaller() {
+    saveFile(ahkinstaller);
 }
 
 function saveFile(url) {
