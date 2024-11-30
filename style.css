@@ -1,15 +1,52 @@
   .title {
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 30px;
   }
+
+  .about {
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .fpabout {
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 14px;
+  }
+
+  .fp,
+  .btn {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .fp {
+      width: 50px;
+  }
+
   .main {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.5s ease-in-out;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+      transition: box-shadow 0.5s ease-in-out;
   }
+
   .main:hover {
-    box-shadow: 0 10px 50px rgba(0,0,0,0.3);
+      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn {
+      background-color: DodgerBlue;
+      border: none;
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;
+  }
+
+  .btn:hover {
+      background-color: RoyalBlue;
   }

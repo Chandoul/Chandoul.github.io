@@ -1,16 +1,36 @@
-function getText() {
-    // read text from URL location
-    var request = new XMLHttpRequest();
-    request.open('GET', 'https://github.com/Chandoul/aoeii_easy_manager/raw/refs/heads/main/AoE%20II%20Manager.json', true);
-    request.send(null);
-    request.onreadystatechange = function () {
-        if (request.readyState === 4 && request.status === 200) {
-            var type = request.getResponseHeader('Content-Type');
-            if (type.indexOf("text") !== 1) {
-                return request.responseText;
-            }
-        }
-    }
+let setting = 'https://raw.githubusercontent.com/Chandoul/aoeii_easy_manager/main/AoE II Manager.json';
+let installer = 'https://raw.githubusercontent.com/Chandoul/aoeii_easy_manager/main/Installer.ahk';
+let rawText = '';
+
+fetch(setting).then(function(response) {
+	response.text().then(function(text) {
+		getVersion(text);
+	});
+});
+
+function getVersion(text) {
+	document.getElementsByClassName('title')[0].textContent = "Age of Empires II: AoK & AoC Easy Manager v" + JSON.parse(text)['Version'];
 }
 
-console.log(getText());
+function getInstaller() {
+    saveFile(installer);
+    console.log('ok');
+}
+
+function saveFile(url) {
+    // Get file name from url.
+    var filename = "AoE II Manager AIO Installer.ahk";
+    var xhr = new XMLHttpRequest();
+    xhr.responseType = 'blob';
+    xhr.onload = function () {
+        var a = document.createElement('a');
+        a.href = window.URL.createObjectURL(xhr.response); // xhr.response is a blob
+        a.download = filename; // Set the file name.
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.click();
+        delete a;
+    };
+    xhr.open('GET', url);
+    xhr.send();
+}
