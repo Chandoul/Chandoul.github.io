@@ -13,7 +13,6 @@ function getVersion(text) {
 }
 
 function getInstaller() {
-    saveFile(installer);
     console.log('ok');
 }
 
