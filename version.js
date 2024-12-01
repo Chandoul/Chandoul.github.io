@@ -22,14 +22,11 @@ function getAHKInstaller() {
 }
 
 function saveFile(url) {
-    // Get file name from url.
-    var filename = "AoE II Manager AIO.exe";
     var xhr = new XMLHttpRequest();
     xhr.responseType = 'blob';
     xhr.onload = function () {
         var a = document.createElement('a');
         a.href = window.URL.createObjectURL(xhr.response); // xhr.response is a blob
-        a.download = filename; // Set the file name.
         a.style.display = 'none';
         document.body.appendChild(a);
         a.click();
