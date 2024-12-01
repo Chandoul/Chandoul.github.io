@@ -1,70 +1,52 @@
-  .title {
-      text-align: center;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 30px;
-  }
+.title {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
 
-  .about {
-      text-align: center;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+.about {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  .fpabout {
-      text-align: center;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 14px;
-  }
+.fpabout {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
 
-  .fp,
-  .installer,
-  .ahkinstaller {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-  }
+.fp,
+.installer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  .fp {
-      width: 50px;
-  }
+.fp {
+    width: 50px;
+}
 
-  .main {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-      transition: box-shadow 0.5s ease-in-out;
-  }
+.main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.5s ease-in-out;
+}
 
-  .main:hover {
-      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
-  }
+.main:hover {
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+}
 
-  .installer,
-  .ahkinstaller {
-      background-color: DodgerBlue;
-      border: none;
-      color: white;
-      padding: 12px 30px;
-      cursor: pointer;
-      font-size: 20px;
-  }
+.installer {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
 
-  .ahkinstaller {
-      background-color: rgb(24, 160, 11);
-  }
-
-  .btn:hover {
-      background-color: RoyalBlue;
-  }
-
-  .btn:hover {
-      background-color: rgb(24, 160, 11);
-  }
-
-  #myVideo {
-      position: fixed;
-      right: 0;
-      bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
-  }
+.installer:hover {
+    background-color: RoyalBlue;
+}

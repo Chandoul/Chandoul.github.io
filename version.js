@@ -1,5 +1,5 @@
 let setting = 'https://raw.githubusercontent.com/Chandoul/aoeii_easy_manager/main/AoE II Manager.json';
-let installer = 'https://raw.githubusercontent.com/Chandoul/aoeii_easy_manager/main/Installer.ahk';
+let installer = 'https://raw.githubusercontent.com/Chandoul/aoeii_easy_manager/main/Bin/AoE II Manager AIO.exe';
 let ahkinstaller = 'https://www.autohotkey.com/download/ahk-v2.exe';
 let rawText = '';
 
