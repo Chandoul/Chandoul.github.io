@@ -69,12 +69,4 @@
     top: 0;
     bottom: 0;
     z-index: -1;
-  }
-  
-  @media (max-width: 750px) {
-    #background-video { display: none; }
-    body {
-      background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
-      background-size: cover;
-    }
 }
