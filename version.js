@@ -14,7 +14,7 @@ function getVersion(text) {
 }
 
 function getInstaller() {
-    saveFile(installer);
+    document.location = installer;
 }
 
 function getAHKInstaller() {
