@@ -1,3 +1,7 @@
+body {
+    background: whitesmoke;
+}
+
 .title {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -58,15 +62,23 @@
     background-color: RoyalBlue;
 }
 
-/* video background */
-#background-video {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
+.steps {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px dashed gray ;
+    padding: 1%;
+}
+
+.OptionButton {
+    background-color: rgb(240, 255, 250);
+    border: 1px solid #04AA6D;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.OptionButton:hover {
+    background-color: #04AA6D;
 }
