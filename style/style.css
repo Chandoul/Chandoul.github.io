@@ -68,7 +68,7 @@ body {
     margin-left: 10%;
     margin-right: 10%;
     border: 2px dashed gray ;
-    padding: 1%;
+    padding: 2%;
 }
 
 .OptionButton {
@@ -77,8 +77,25 @@ body {
     border-radius: 3px;
     font-weight: bold;
     font-size: 14px;
+    padding: 1%;
 }
 
 .OptionButton:hover {
     background-color: #04AA6D;
+}
+
+li {
+    margin: 1%;
+    padding: 1%;
+}
+
+li:hover {
+    background-color: rgb(209, 209, 209);
+}
+
+.hih {
+    background-color: rgb(213, 228, 255);
+    border: 1px dashed gray ;
+    padding: 1%;
+    text-align: center;
 }
